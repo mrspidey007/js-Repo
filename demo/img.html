@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="pic">
+    <button  onclick="btn()">show</button>
+    <button  onclick="btn1()">clear</button>
+    <script>
+       function btn(){
+        var a=document.getElementById("pic")
+        a.src=("https://hdqwalls.com/wallpapers/spidey-art-3i.jpg")
+        a.style.width=("300px")
+        a.style.height=("400px")
+       }
+       function btn1(){
+        var a=document.getElementById("pic")
+        a.style.display="none"
+        a.style.width=("300px")
+        a.style.height=("400px")
+       }
+        
+    </script>
+    
+</body>
+</html>

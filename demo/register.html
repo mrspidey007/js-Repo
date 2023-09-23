@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1><b>Register Your Account</b></h1>
+    User Name: <input type="text"  id="name"><br>
+    Enter Email ID: <input type="text" id="mail"><br>
+    Enter Username: <input type="text" id="username"><br>
+    Enter Password: <input type="text" id="password"><br>
+    Enter confirm Password : <input type="text" id="passsword1"><br>
+
+<input type="button" value="submit" onclick="value()">
+<input type="button" value="reset" onclick="u()">
+<div id="demo1"></div>
+<div id="demo2"></div>
+<div id="demo3"></div>
+<div id="demo4"></div>
+<div id="demo5"></div>
+
+<script>
+    function valid(){
+ var a=document.getElementById("name").value;
+ var b=document.getElementById("mail").value;
+ var c=document.getElementById("username").value;
+ var d=document.getElementById("password").value;
+ var e=document.getElementById("password1").value;
+ alert("successfully submitted")
+ document.getElementById("demo1").innerHTML=("name:"+a);
+ document.getElementById("demo2").innerHTML=("mail:"+b);
+ document.getElementById("demo3").innerhtml=("username:"+c);
+ document.getElementById("demo4").innerhtml=("password:"+d);
+ document.getElementById("demo5").innerhtml=("password1:"+e);
+ 
+
+}
+function u(){
+    document.getElementById("name").value="";
+    document.getElementById("mail").value="";
+    document.getElementById("username").value="";
+    document.getElementById("password").value="";
+    document.getElementById("passsword1").value="";
+}
+</script>
+</body>
+</html>

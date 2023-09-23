@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    name:<input type="text"><br>
+    email id:<input type="text" id="email"><br>
+    address:<input type="text" id="address"><br>
+    mobile number:<input type="number" id="mobile"><br>
+    qualification: <input type="text" id="qualification"><br>
+    <input type="button" value="sumbit" onclick="valid()">
+    <div class="demo"></div>
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+    <div class="demo4"></div>
+    <script>
+        function valid(){
+            var a=document.queryselector("input").value;
+            var b=document.getElementByid("#email").value;
+            var c=document.getElementByid("#address").value;
+            var d=document.getElementByid("#mobile").value;
+            var e=document.getElementByid("#qualification").value;
+            document.getElementById("demo").innerHTML=a;
+            document.getElementById("demo").innerHTML=b;
+            document.getElementById("demo").innerHTML=c;
+            document.getElementById("demo").innerHTML=d;
+            document.getElementById("demo").innerHTML=e;
+            document.queryselector("input").value="";
+        }
+    </script>
+</body>
+
+</html>

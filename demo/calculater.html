@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="value" id="txt">
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th> <button onclick='b1("1")'>1</button></th>
+                <th><button onclick='b1("2")'>2</button></th>
+                <th><button  onclick='b1("3")'>3</button></th>
+                <th><button onclick="u()">DEL</button></th>
+            </tr>
+            <tr>
+                <th><button  onclick="b1('4')">4</button></th>
+                <th><button  onclick="b1('5')">5</button></th>
+                <th><button  onclick="b1('6')">6</button></th>
+                <th><button onclick="b1('+')">+</button></th>
+            </tr>
+            <tr>
+                <th><button onclick="b1('7')">7</button></th>
+                <th><button onclick="b1('8')">8</button></th>
+                <th><button onclick="b1('9')">9</button></th>
+                <th><button onclick="b1('-')">-</button></th>
+            </tr>
+            <tr>
+                <th><button onclick="b1('0')">0</button></th>
+                <th><button onclick="b1('*')">*</button></th>
+                <th><button onclick="b1('/')">/</button></th>
+                <th><button onclick="op()">=</button></th>
+            </tr>
+
+        </table>
+    </div>
+    <script>
+        function b1(value){
+            document.getElementById("txt").value+=value
+        }
+        function op(){
+           var s=eval(document.getElementById("txt").value);
+           document.getElementById("txt").value=s
+        }
+        function u(){
+            document.getElementById("txt").value=''
+        }
+    </script>
+</body>
+
+</html>
